@@ -8660,10 +8660,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: c1837f963183881439e35dd22c1ae07b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b4e13276968967940b12b1acc2ebe73a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c1837f963183881439e35dd22c1ae07b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1787144375}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c1837f963183881439e35dd22c1ae07b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1787144374}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c1837f963183881439e35dd22c1ae07b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1787144373}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c1837f963183881439e35dd22c1ae07b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1787144377}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c1837f963183881439e35dd22c1ae07b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1787144376}
   m_SourcePrefab: {fileID: 100100000, guid: c1837f963183881439e35dd22c1ae07b, type: 3}
 --- !u!4 &1787144370 stripped
 Transform:
@@ -8675,6 +8694,138 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6515712193588681746, guid: c1837f963183881439e35dd22c1ae07b, type: 3}
   m_PrefabInstance: {fileID: 1787144369}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1787144372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c1837f963183881439e35dd22c1ae07b, type: 3}
+  m_PrefabInstance: {fileID: 1787144369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1787144373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787144372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 61e0e332dba8dcf4fb0e70c833aa5ac5, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1787144377}
+        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+        m_MethodName: moving
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 776edab8-cc8c-4789-962f-69b6f2869ebc
+    m_ActionName: CharInputs/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: CharInputs
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!54 &1787144374
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787144372}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!143 &1787144375
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787144372}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1787144376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787144372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e11740f30f4bf478fab9a02503927d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fraction: 100
+--- !u!114 &1787144377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787144372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61bca17836c305a47a7e5c3d3c67886c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  R2D: {fileID: 0}
+  movementValue: {x: 0, y: 0}
+  movementSpeed: 1
 --- !u!1 &1792318896
 GameObject:
   m_ObjectHideFlags: 0
